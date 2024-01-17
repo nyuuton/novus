@@ -1,2 +1,62 @@
 h1{color:green;}
 
+@media screen and (max-width: 800px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+h1{color:blue;
+background-color: lightgreen;
+}
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rectangle {
+	width: 100vw;
+	height: 1vh;
+	background-color: #39568b;
+}
+
+.circular_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  /*background-color: blue;*/
+  /* commented for demo
+  float: left;
+  margin-left: 125px;
+  margin-top: 20px;
+  */
+
+  /*for demo*/
+  /*display:inline-block;
+  */display:block;
+  vertical-align:middle; 
+ position: relative;
+ top: 20px;
+ left: 0px;
+ align-items: center;
+}
+
+.column {
+  /*display: block;*/
+  float: left;
+}
+
+.column.left {
+  flex-direction: column;
+  display: flex;
+  width: 20%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.column.right {
+  width: 80%;
+  display: block;
+}
